@@ -1,0 +1,288 @@
+.form-dropdown-ireEVT {
+  background-color: transparent;
+  height: 61px;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+.centered-view-page-date{
+  width: 318px;
+  margin-left: 17.5px;
+  position: relative;
+}
+
+.frame-274-uxwwVF {
+  border-radius: 4px;
+  height: 48px;
+  left: 0;
+  position: relative;
+  width: 100%;
+}
+
+.frame-1558-ZQP9wi {
+  background-color: transparent;
+  height: 24px;
+  left: 24px;
+  position: absolute;
+  top: 12px;
+  width: 173px;
+}
+
+.icon24calendar-Xqg3zM {
+  background-color: transparent;
+  height: 24px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 24px;
+}
+
+.x4-may-2017-9-may-2017-Xqg3zM {
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 32px;
+  line-height: 18px;
+  position: absolute;
+  text-align: left;
+  top: 3px;
+  white-space: nowrap;
+  width: 100%;
+  border: none;
+}
+
+.icon24-arrow-down-ZQP9wi {
+  background-color: transparent;
+  height: 24px;
+  float: right;
+  position: relative;
+  top: 12px;
+  margin-right: 20px;
+  width: 24px;
+  transform: rotate(-90.00deg);
+}
+
+.vector-llIstm {
+  background-color: transparent;
+  height: 15px;
+  left: 7px;
+  position: absolute;
+  top: 6px;
+  width: 10px;
+}
+
+.frame-276-uxwwVF {
+  background-color: var(--white);
+  height: auto;
+  left: 17px;
+  position: absolute;
+  top: -8px;
+  width: auto;
+  white-space: nowrap;
+}
+
+.licence-iuKdwI {
+  background-color: var(--white);
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 8px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  width: auto;
+}
+
+.form-calendar-month-Felv44 {
+  height: 360px;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px #00000026;
+  position: relative;
+  width: 345px;
+}
+
+.group-311-9lf4qE {
+  background-color: transparent;
+  height: 360px;
+  position: absolute;
+  width: 350px;
+  z-index: 90;
+}
+
+.frame-1338-2hLfwx {
+  background-color: transparent;
+  height: 16px;
+  left: 22px;
+  position: relative;
+  top: 0;
+  width: 299px;
+}
+
+.rectangle-353-2hLfwx {
+  background-color: var(--bluegrey);
+  border: none;
+  height: 3px;
+  left: 0;
+  position: relative;
+  top: 12px;
+  width: 300px;
+}
+
+.frame-1360-eRHxiz {
+  background-color: transparent;
+  height: 250px;
+  position: relative;
+  left: 6px;
+  top: 28px;
+  width: 318px;
+}
+
+.frame-1340-p4i8St {
+  background-color: transparent;
+  height: 42px;
+  position: absolute;
+  width: 100%;
+  top: 26px;
+}
+
+.frame-1352-12Qo6S {
+  border-radius: 4px;
+  height: 50px;
+  position: relative;
+  width: 90px;
+  left:8px;
+  cursor: pointer;
+}
+
+.selected-month-fonts {
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  font-size: 13px;
+}
+
+.frame-1353-YfM5dm {
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 4px;
+  height: 50px;
+  position: relative;
+  width: 90px;
+  left: 8px;
+}
+
+.frame-1353-YfM5dm:hover{
+  background-color: var(--light-purple-2)
+}
+
+.month-fonts {
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  font-size: 13px;
+}
+
+.icon12-arrow-down-18NAFj {
+  background-color: transparent;
+  height: 12px;
+  left: 0px;
+  position: absolute;
+  top: 2px;
+  transform: rotate(90.00deg);
+  width: 12px;
+  cursor: pointer;
+}
+
+.vector-t84c00 {
+  background-color: transparent;
+  height: 10px;
+  left: 3px;
+  position: absolute;
+  top: 1px;
+  transform: rotate(-90.00deg);
+  width: 6px;
+}
+
+.title-datepicker {
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  line-height: 16px;
+  position: absolute;
+  text-align: center;
+  white-space: nowrap;
+  width: 80%;
+  margin-left: 10%;
+  cursor: pointer;
+}
+
+.icon12-arrow-down-TT6HtW {
+  background-color: transparent;
+  height: 12px;
+  left: 287px;
+  position: absolute;
+  top: 2px;
+  transform: rotate(90.00deg);
+  width: 12px;
+  cursor: pointer;
+}
+
+.vector-rY5vzO {
+  background-color: transparent;
+  height: 10px;
+  left: 3px;
+  position: absolute;
+  top: 1px;
+  transform: rotate(90.00deg);
+  width: 6px;
+}
+
+.short-name-day {
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: 0px;
+  line-height: 18.7px;
+  position: relative;
+  text-align: center;
+  top: -10px;
+  white-space: nowrap;
+  width: 40px;
+  font-size: medium;
+}
+
+.day-number-rows {
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 500;
+  font-size: medium;
+  height: auto;
+  left: 0px;
+  line-height: 18.7px;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+
+.yU6tNu22{
+  width: 40px;
+  text-align: center;
+  height: 40px;
+  cursor: auto;
+  border-radius: 100%;
+}
+
+.yU6tNu23:hover{
+  cursor: pointer;
+  background-color: var(--light-purple-2);
+}
+.yU6tNu23{
+  cursor: pointer;
+  background-color: transparent;
+}

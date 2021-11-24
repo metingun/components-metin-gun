@@ -1,0 +1,57 @@
+<div (click)="!isDisabled?(viewPage===-1?viewPage=0:viewPage=-1):''" *ngIf="timeWithInput" class="form-dropdown-ireEVT" [ngClass]="hidingClassString">
+  <div [ngStyle]="{'background-color':'var(--'+theme.inputBgColor+')'}"
+       class="frame-274-uxwwVF border-2px-bluegrey" [ngClass]="hidingClassString">
+    <div class="frame-1558-ZQP9wi" [ngClass]="hidingClassString">
+      <img class="icon24calendar-Xqg3zM" [ngClass]="hidingClassString" src="../../../assets/img/icon-24-plan@2x.svg"/>
+      <input (keyup)="inputKeyUp()"
+             [(ngModel)]="viewTime" [appMaskDate]="separateDateForMask()"
+             [ngStyle]="{'color':'var(--'+theme.inputFontColor+')'}" [placeholder]="separateDateForMaskPlaceholder()"
+             class="x4-may-2017-9-may-2017-Xqg3zM body-01-regular" [ngClass]="hidingClassString"
+             [disabled]="isDisabled" [readOnly]="isDisabled"/>
+    </div>
+    <div class="icon24-arrow-down-ZQP9wi" [ngClass]="hidingClassString">
+      <img class="vector-llIstm" [ngClass]="hidingClassString" src="../../../assets/img/vector-47@2x.png"/></div>
+  </div>
+  <div class="frame-276-uxwwVF" [ngClass]="hidingClassString">
+    <div [ngStyle]="{'color':'var(--'+theme.inputLabelColor+')'}"
+         class="licence-iuKdwI body-01-medium" [ngClass]="hidingClassString">{{label}}</div>
+  </div>
+</div>
+<div *ngIf="viewPage!==-1" class="group-311-9lf4qE" [ngClass]="hidingClassString" [ngStyle]="{'position':!timeWithDatepicker?'absolute':'relative'}">
+  <div class="form-calendar-month-Felv44" [ngClass]="hidingClassString">
+    <!--[ngStyle]="{'background-color':'var(&#45;&#45;'+theme.pickerBgColor+')'}"-->
+    <div [ngStyle]="{'background-color':'var(--'+theme.bgColor+')'}" class="frame-1822-C61RwL111" [ngClass]="hidingClassString">
+      <div [ngStyle]="{'background-color':'var(--'+theme.hourBgColor+')','border':'2px solid var(--'+theme.borderColor+')',
+       'width':hour24?'45%':'30%'}"
+           class="frame-274-yXUw3T" [ngClass]="hidingClassString">
+        <div class="frame-1827-xqLe83" [ngClass]="hidingClassString">
+          <div [ngStyle]="{'color':'var(--'+theme.fontColor+')'}"
+               class="mask-group-vTOYBr body-02-medium valign-text-middle" [ngClass]="hidingClassString">{{currentHour}}</div>
+        </div>
+        <div class="icon24-arrow-up-down-xqLe83" [ngClass]="hidingClassString">
+          <img (click)="hourDown()" class="vector-apzxWg" [ngClass]="hidingClassString" src="../../../assets/img/vector-14@2x.svg"/>
+          <img (click)="hourUp()" class="vector-QspbWX" [ngClass]="hidingClassString" src="../../../assets/img/vector-15@2x.svg"/>
+        </div>
+      </div>
+
+      <div [ngStyle]="{'background-color':'var(--'+theme.hourBgColor+')','border':'2px solid var(--'+theme.borderColor+')',
+       'width':hour24?'45%':'30%'}"
+           class="frame-274-yXUw3T" [ngClass]="hidingClassString">
+        <div class="frame-1827-xqLe83" [ngClass]="hidingClassString">
+          <div [ngStyle]="{'color':'var(--'+theme.fontColor+')'}"
+               class="mask-group-vTOYBr body-02-medium valign-text-middle" [ngClass]="hidingClassString">{{currentMinute}}</div>
+        </div>
+        <div class="icon24-arrow-up-down-xqLe83">
+          <img (click)="minuteDown()" class="vector-apzxWg" [ngClass]="hidingClassString" src="../../../assets/img/vector-14@2x.svg"/>
+          <img (click)="minuteUp()" class="vector-QspbWX" [ngClass]="hidingClassString" src="../../../assets/img/vector-15@2x.svg"/>
+        </div>
+      </div>
+
+      <div (click)="changeHourFormat()" *ngIf="!hour24" [ngStyle]="{'background-color':'var(--'+theme.hourBgColor+')','border':'2px solid var(--'+theme.borderColor+')'}"
+           class="frame-274-AdHYzt" [ngClass]="hidingClassString">
+        <div [ngStyle]="{'color':'var(--'+theme.hourFormatColor+')'}"
+             class="pm-4NKAIu body-02-bold" [ngClass]="hidingClassString">{{hourFormat}}</div>
+      </div>
+    </div>
+  </div>
+</div>

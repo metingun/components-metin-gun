@@ -1,0 +1,78 @@
+.cards-drag-drop-9lf4qE {
+  border-radius: 4px;
+  height: fit-content;
+  position: relative;
+  width: 100%;
+}
+
+.cards-drag-drop-9lf4qE:hover{
+  border: 2px dashed;
+}
+
+.icon-feather-upload-cloud-oIPAqk {
+  background-color: transparent;
+  height: 33px;
+  position: relative;
+  top: 4px;
+  width: 40px;
+}
+
+.frame-1201-RfxLLO {
+  background-color: transparent;
+  height: auto;
+  margin-left: 5%;
+  position: relative;
+  top: 34px;
+  width: 90%;
+  text-align: center;
+}
+
+.frame-116-fxhkU6 {
+  background-color: transparent;
+  height: auto;
+  margin-left: 5%;
+  position: relative;
+  width: 90%;
+  text-align: center;
+}
+
+.icons40-upload-V9xOE7 {
+  background-color: transparent;
+  height: 45px;
+  margin-left: 40%;
+  position: relative;
+  width: 18%;
+}
+
+.drag-drop-a-fil-295653227240253-V9xOE7 {
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 5%;
+  position: relative;
+  text-align: center;
+  top: 4px;
+  width: 90%;
+}
+
+.x512x512-maks-51-295653227722266-fxhkU6 {
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 5%;
+  position: relative;
+  text-align: center;
+  word-break: break-word;
+  width: 90%;
+  margin-top: 5px;
+}
+
+.button-file-upload {
+  position: relative;
+  margin-top: 45px;
+  margin-left: 30%;
+  width: 40%;
+  z-index: 0;
+}

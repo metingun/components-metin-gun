@@ -1,0 +1,28 @@
+.fixed-button-frame{
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 27px;
+  position: fixed;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 54px;
+  height: 54px;
+  bottom: 3%;
+  right: 3%;
+  z-index: 150;
+}
+
+.button-star-icon{
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+
+.fixed-button-frame:hover{
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 16px;
+  width: 218px;
+}

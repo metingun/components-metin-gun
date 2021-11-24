@@ -1,0 +1,79 @@
+<div class="form-textbox-C61RwL" [ngStyle]="{
+  'background-color':isValid!==null?( isValid?'var(--'+validationTheme.valid.bgColor+')':'var(--'+validationTheme.invalid.bgColor+')'):
+  'var(--'+theme.bgColor+')',
+  'border':isValid!==null?( isValid?'2px solid var(--'+validationTheme.valid.borderColor+')':'2px solid var(--'+validationTheme.invalid.borderColor+')'):
+  '2px solid var(--'+theme.borderColor+')'}"
+     *ngIf="features.inputType==='text'" (click)="clickTextDiv()">
+
+  <div *ngIf="features.iconPath!==''" class="icon-input-div">
+    <icons [iconPosition]="features.iconPosition" [iconName]="features.iconPath"></icons>
+  </div>
+
+  <input [id]="inputId" [(ngModel)]="text" (keyup)="changeInput()" [ngStyle]="{'color': 'var(--'+theme.inputColor+')',
+  'margin-left':features.iconPath===''?'12px':'25px','width':features.iconPath===''?'88%':'80%'}"
+         class="phone-number-NlURG5 body-01-medium"
+         placeholder="{{features.placeholderText}}" [type]="features.inputDataType"
+         [autocomplete]="autoComplete" stopPropagation [autofocus]="!isDisabled?focused:false"
+         (focusin)="!isDisabled?focused=true:focused=false" (focusout)="features.iconPath===''?focused=false:''"
+         [readOnly]="isDisabled"
+         [required]="getRequiredValue()"
+         [minlength]="getMinLengthValue()"
+         [maxlength]="getMaxLengthValue()"
+         [max]="getMaxValue()" [min]="getMinValue()"
+         [pattern]="getPatternValue()" title=""/>
+  <div *ngIf="!isValid" class="if-call-release-n-becomes-valid-iox9pg small"
+       [ngStyle]="{'color':isValid!==null?(isValid?'var(--'+validationTheme.valid.fontColor+')':'var(--'+validationTheme.invalid.fontColor+')')
+       :'var(--'+theme.fontColor+')'}">
+    {{alertMessage}}
+  </div>
+
+  <div [class.custom-combo-box-header-title-transition]="
+    focused||text!==''" class="description-OKb1qO body-01-medium"
+       [ngStyle]="getStyle()" >
+    <label [for]="features.iconPath===''?inputId:'null'"
+           [ngStyle]="{'color':isValid!==null?
+           (isValid?'var(--'+validationTheme.valid.fontColor+')':'var(--'+validationTheme.invalid.fontColor+')')
+            :'var(--'+theme.fontColor+')'}"
+           style="width: 100%;position:relative;display: flow-root;">{{features.labelText}}
+    </label>
+  </div>
+</div>
+
+
+
+<!-- VALIDATION KISIMLARI TEXT AREA İÇİN DE YAPILACAK -->
+
+<div *ngIf="features.inputType==='text-area'" class="form-textboxlongtext-C61RwL"
+     [ngStyle]="{'height':theme.heightInput}">
+      <textarea [id]="inputId" class="textarea-input body-01-regular" (focusin)="!isDisabled?focused=true:focused=false"
+                (focusout)="features.iconPath===''?focused=false:''"
+                [ngStyle]="{'color': 'var(--'+theme.inputColor+')',
+                'background-color':isValid!==null?( isValid?'var(--'+validationTheme.valid.bgColor+')':
+                'var(--'+validationTheme.invalid.bgColor+')'):
+                'var(--'+theme.bgColor+')',
+                'height':theme.heightInput,'max-height':theme.heightInput,
+                'border':(isValid!==null?(isValid?'2px solid var(--'+validationTheme.valid.borderColor+')':
+                '2px solid var(--'+validationTheme.invalid.borderColor+')'):'2px solid var(--'+theme.borderColor+')')}"
+                placeholder="{{features.placeholderText}}" [(ngModel)]="text"
+                (keyup)="changeInput()" [autofocus]="!isDisabled?focused:false" [readOnly]="isDisabled"
+                [required]="getRequiredValue()"
+                [minlength]="getMinLengthValue()"
+                [maxlength]="getMaxLengthValue()"
+                [pattern]="getPatternValue()" title=""></textarea>
+
+  <div *ngIf="!isValid" class="if-call-release-n-becomes-valid-iox9pg small"
+       [ngStyle]="{'color':isValid!==null?(isValid?'var(--'+validationTheme.valid.fontColor+')':
+       'var(--'+validationTheme.invalid.fontColor+')')
+       :'var(--'+theme.fontColor+')'}" style="margin-top: 0">
+    {{alertMessage}}
+  </div>
+
+  <div class="description-OKb1qO body-01-medium" [ngStyle]="{'color':isValid!==null?
+  (isValid?'var(--'+validationTheme.valid.fontColor+')':'var(--'+validationTheme.invalid.fontColor+')')
+       :'var(--'+theme.fontColor+')',
+    'left':features.labelText!=='' ? '14px':'','top':features.labelText!=='' ?'-9px':'',
+       'background-color': 'var(--'+theme.bgColor+')'}">{{features.labelText}}</div>
+</div>
+
+
+

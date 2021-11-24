@@ -1,0 +1,138 @@
+.form-textbox-C61RwL {
+  border-radius: 4px;
+  height: 48px;
+  position: relative;
+  width: 100%;
+}
+
+.icon-input-div{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  margin-top: 15px;
+  left: 20px;
+  float: left;
+}
+
+.phone-number-NlURG5 {
+  background-color: transparent;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  height: 18px;
+  position: relative;
+  resize: none;
+  text-align: left;
+  top: 15px;
+  float: left;
+  width: 100%;
+}
+
+
+.form-textboxlongtext-C61RwL {
+  background-color: transparent;
+  position: relative;
+  width: 100%;
+}
+
+.textarea-input {
+  background-color: transparent;
+  position: relative;
+  text-align: start;
+  width: 100%;
+  padding: 12px;
+  resize: none;
+  outline: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-radius: 4px;
+}
+
+textarea:focus-within {
+  border: solid 2px;
+}
+
+.description-OKb1qO {
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 500;
+  height: 12px;
+  position: absolute;
+  width: auto;
+  text-align: left;
+  top: 14px;
+}
+
+
+.textarea-input::-webkit-scrollbar {
+width: 3px;
+}
+
+.textarea-input::-webkit-scrollbar-track {
+background-color: var(--bluegrey);
+border-radius: 100px;
+}
+
+.textarea-input::-webkit-scrollbar-thumb {
+border-radius: 100px;
+border: 0px solid transparent;
+background-clip: content-box;
+background-color: var(--blue);
+}
+
+.textarea-input::-webkit-scrollbar-track-piece {
+height: 90%;
+}
+
+
+
+
+
+.custom-combo-box-header-title-transition {
+transform: translateX(-0.75em) translateY(-2.35em) scale(1);
+background: white;
+transition: all 200ms ease-out;
+position: absolute!important;
+margin-top: 3.5px;
+margin-left: 9px;
+}
+
+.custom-combo-box-header-title {
+line-height: 19px;
+-webkit-user-select: none;
+user-select: none;
+margin-left: 9%;
+position: absolute;
+float: left;
+}
+
+.licence-rdOVtA {
+background-color: transparent;
+font-style: normal;
+font-weight: 500;
+height: auto;
+line-height: normal;
+text-align: left;
+}
+
+.if-call-release-n-becomes-valid-iox9pg {
+  background-color: transparent;
+  height: auto;
+  left: 1px;
+  margin-top: 30px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 100%;
+  float: left;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}

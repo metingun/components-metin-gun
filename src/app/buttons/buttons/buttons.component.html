@@ -1,0 +1,12 @@
+<button class="button_style valign-text-middle custom-combo-box-header-item"
+        [ngClass]="(theme.buttonHeight==='xs'|| theme.buttonHeight==='s')? 'b2':'body-01-bold'"
+        [ngStyle]="getSizeStyle()"
+        (click)="buttonAction()" [disabled]="isDisabled">
+  <input #fileInput class="input-file custom-combo-box-header-item visually-hidden" *ngIf="buttonOptions.buttonType==='file'"
+         [multiple]="multiple" (change)="addFiles(fileInput.files)" type="file" title="" [disabled]="isDisabled"/>
+  <icons *ngIf="iconOptions.iconType!==''" [iconName]="iconOptions.iconImagePath" [iconPosition]="iconOptions.iconType"
+         class="custom-combo-box-header-item"></icons>
+  {{buttonOptions.buttonLetter}}
+</button>
+<div *ngIf="buttonOptions.buttonType==='file'" class="file-info small">{{ getFileInfo() }}</div>
+

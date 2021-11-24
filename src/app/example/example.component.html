@@ -1,0 +1,158 @@
+<!--
+&lt;!&ndash;    COMPONENTS   &ndash;&gt;
+
+<div style="width: 850px;">
+  <combobox [options]="options" [visible]="visible" [selectedOption]="selectedOption" [label]="label"
+                  (chooseEvent)="selectEvent($event)" [themeOptions]="theme5" [buttonOptions1]="buttonOptions3"
+                  (clickButton)="buttonClick($event)" [bulkSelection]="bulkSelection" [selectionType]="selectionType1"
+                  [selectionsTheme]="selectionsTheme" [selectedOptionsList]="selectedOptionsList" [uniqueValue]="uniqueValue"
+                  [themeButton]="themeButton3" [iconOptions]="iconOptions3"
+                  [placeholder]="placeholder" [themeInput]="themeInput"
+                  [search]="search"  [clickOutCloseBox]="clickOutCloseBox2" [iconView]="iconView"></combobox>
+</div>
+<div style="width: 650px;position: relative;margin-top: 25px">
+  <input-demo [theme]="themeInputs" [features]="features"
+               (inputText)="changeText($event)" [text]="textInput" [isDisabled]="isDisabledInput" [validation]="validation"
+              [validationsOptions]="validationsOptions" [validationTheme]="validationTheme" ></input-demo>
+</div>
+
+<div style="width: 20%;position: relative">
+  <search-input [theme]="themeSearchInput" [searchPlaceholder]="searchPlaceholder"
+                      [privateSearchMethod]="privateSearchMethod" (searchEvent)="searchTextEvent($event)"></search-input>
+</div>
+
+<div style="width: 24%;position: relative">
+  <upload-file #upload [boldText]="boldText" [text]="text"
+                     [themeButton]="themeButtonUploadFile" [theme]="themeUploadFile"
+                     [iconOptions]="iconOptionsUF" [buttonOptions]="buttonOptionsUF"
+                     [multiple]="false" [fileTypes]="fileTypes" [dragDropEnabled]="true"
+                     (filesChanged)="filesChanged($event)" [image]="imageUploadFile"  ></upload-file>
+</div>
+
+<checks (isSelected)="isSelected($event)" [activeText]="activeText"
+            [passiveText]="passiveText" [theme]="theme6"
+            [selectionType]="selectionType" [selectionStatus]="selectionStatus" ></checks>
+
+<div style="width: 100%;position: relative">
+  <navbar-top [iconOptions]="iconOptionsExit" [themeButton]="themeButtonExit" [languages]="languages"
+                    [selectedLanguage]="selectedLanguage" [boxTheme]="boxTheme"
+                    [optionsTheme]="optionsTheme" [buttonOptions1]="buttonOptionsExit"
+                    (buttonClick)="buttonEventNavTop()" [options]="options" [accountImage]="accountImage"
+                    [accountName]="accountName" [roleName]="roleName" (searchEvent)="searchTextEvent($event)"
+                    [privateSearchMethod]="privateSearchMethod" [searchPlaceholder]="searchPlaceholder"
+                    [theme]="themeNavTop" (languageSelection)="selectedEvent($event)" (logoClick)="iconClick()"
+                    [boxTheme2]="boxLangTheme" [optionsTheme2]="optionsLangTheme"
+                    [selectedOptionAccount]="selectedOptionAccount" [themeAccount]="themeAccount"
+                    [themeSearch]="themeSearchInput" [visibility]="visibility"
+                    (accountSelection)="selectOptionEvent($event)"></navbar-top>
+</div>
+
+&lt;!&ndash;datetimepicker&ndash;&gt;
+<div style="width: 300px;margin-top: 100px">
+  <datepicker [dateInfoModel]="dateInfoModel" [theme]="theme111"
+                    [hour24]="hour24" [withTimePicker]="withTimePicker"
+                    [label]="labelDate" [currentDate]="currentDate" [dateFormat]="dateFormat"
+                    [themeTimepicker]="themeTimepicker" (getDate)="getDate($event)" [isDisabled]="isDisabledDP">
+  </datepicker>
+</div>
+
+<div style="width: 10%;left: 100px;top:100px;position:relative;">
+  <timepicker [label]="labelTime" [currentTime]="currentTime"
+                    [hour24]="hour24" [theme]="themeTimepicker"
+                    (getTime)="getTime($event)" [timeWithInput]="timeWithInput"
+                    [timeFormat]="timeFormat" [clickOutCloseBox]="true" [timeWithDatepicker]="false"
+                    [isDisabled]="isDisabledTP"></timepicker>
+</div>
+
+<div style="width: 240px;position:relative;">
+  <options [selectedOption]="selectedOption" [theme]="theme5" (selectEvent)="selectEvent($event)"
+                 [options]="options" [visible]="visible" [bulkSelection]="bulkSelection" [selectionType]="'checkbox'"
+                 [selectionsTheme]="theme6" [viewIcons]="viewIcons"  [uniqueValue]="uniqueValue"
+                 [themeButton]="themeButton3" [iconOptions]="iconOptions3"
+                 (buttonClick)="buttonClick($event)" [selectedOptionsList]="selectedOptionsList"></options>
+</div>
+
+<div style="margin-top: 0">
+<navbar-left [menuOptions]="navbarLeftOpenOptions" [selectedOption]="selectedOptionNavbar"
+                   [titleDark]="titleDark" [titleLight]="titleLight" [rectangleVisible]="rectangleVisible"
+                   [menuClosed]="menuClosed" [menuOpenClosedEvent]="menuOpenClosedEvent"
+                   (clickOptionByIndex)="clickOptions($event)" (iconClickEvent)="clickOptions($event)"
+                   (clickTitle)="clickTitle($event)" [hiddenNodes]="hiddenNodes" >
+</navbar-left>
+</div>
+
+
+
+<div style="width: 15%;height: 45px">
+  <account-selection [boxTheme]="boxTheme" [optionsTheme]="optionsTheme" [theme]="themeAccount"
+                         [roleName]="roleName" [accountName]="accountName" [accountImage]="accountImage"
+                         (selectOptionEvent)="selectOptionEvent($event)" [selectedOption]="selectedOptionAccount"
+                         [options]="optionsAccount" [clickOutCloseBox]="clickOutCloseBox"></account-selection>
+</div>
+
+
+<div style="width: 15%;height: 45px;position: relative">
+  <language-selection [optionsTheme]="optionsLangTheme" [boxTheme]="boxLangTheme"
+                            (selectedEvent)="selectedEvent($event)" [selectedLanguage]="selectedLanguage"
+                            [languages]="languages" [clickOutCloseBox]="clickOutCloseBox1">
+  </language-selection>
+</div>
+
+
+
+<div style="width: 10%">
+  <button-demo [theme]="themeButton" (buttonEvent)="buttonEvent($event)"
+                [buttonOptions]="buttonOptions1" [iconOptions]="iconOptions"
+                [isDisabled]="false"></button-demo>
+</div>
+
+<div style="width: 13%;position: relative">
+  <button-medium [theme]="themeMediumButton" (clickEvent)="addNew()"
+                       [buttonText]="addNewTeam" [iconPath]="imageUrlsNewTeam"></button-medium>
+</div>
+
+
+<div style="height: 193px;position:relative;width: 218px;">
+  <button-large (newWindow)="addNew2()" [iconPath]="iconPathLargeButton"
+                      [buttonText]="buttonTextLargeButton"></button-large>
+</div>
+
+&lt;!&ndash; FIXED BUTTONS &ndash;&gt;
+<button-fixed [theme]="themeBF" [buttonOptions]="buttonOptionsBF" (clickEvent)="clickButtonEvent()"></button-fixed>
+
+&lt;!&ndash; TIME PLAN &ndash;&gt;
+<time-plan [theme]="themeTP" [iconOptions]="iconOptionsTP" [themeButton]="themeButtonTP"
+                 [selectionType]="selectionTypeTP" [buttonOptions]="buttonOptionsTP" [dateFormat]="dateFormatTP"
+                 [infoText]="infoTextTP" (clickedLeftButton)="clickedLeftTP($event)"
+                 (clickedRightButton)="clickedRightTP($event)" [buttonOptions2]="buttonOptions2TP"
+                 [days]="daysTP" [iconOptions2]="iconOptions2TP" [separateMinutes]="separateMinutesTP"
+                 [themeButton2]="themeButton2TP" [theme6]="themeCheckTP" [allDayText]="allDaysText"></time-plan>
+
+
+&lt;!&ndash; ANNOUNCE CONTENTS &ndash;&gt;
+<div style="width: 20%">
+  <announce-list-content [theme]="theme8" [buttonOptions]="buttonOptions8" [content]="content"
+                               (buttonEvent)="buttonClick8($event)"  ></announce-list-content>
+</div>
+
+
+
+&lt;!&ndash; ANNOUNCE CONTENT GROUP WITH LIST AND CONTENT GROUPS &ndash;&gt;
+<div cdkDropListGroup>
+  <div style="width: 20%;position: relative;float: left;">
+    <announce-content-frame [announcementPackage]="announcementPackage"
+                                  (buttonEvent)="buttonClick9($event)" [theme]="theme9"
+                                  [noteForEmptyList]="noteForEmptyList"
+                                  (getDataEvent)="getData($event)"></announce-content-frame>
+  </div>
+
+  <div style="width: 18%;position: relative;float: left;height: fit-content">
+    <announce-list [firstIconName]="firstIconName1" [secondIconName]="secondIconName1"
+                         [titleTeamList]="titleTeamList1" [listData]="listData1" (clickAdd)="clickAddButton()"
+                         (clickSecondIcon)="clickSecondIconEvent()" (clickFirstIcon)="clickFirstIconEvent()"
+                         (clickAnnounceButton)="buttonClick10($event)" [listVisible]="listVisible"
+                         [theme]="themeList" [noteForEmptyList]="noteForEmptyListList"
+                         [searchPlaceholder]="searchPlaceholderList"></announce-list>
+  </div>
+</div>
+-->

@@ -1,0 +1,30 @@
+<div *ngIf="visible" class="x102223493" [ngClass]="getHidingClassVisible"
+     [ngStyle]="{'background-color':'var(--'+theme.bgColor+')'}">
+  <div class="frame-56-lOKy0j111" [ngClass]="getHidingClassVisible">
+    <div class="frame-32-LwyPgk" [ngClass]="getHidingClass()" (click)="!bulkSelection?visible=false:''"
+         *ngFor="let option of options;let index=index">
+      <div class="frame-1362-4NCj7i" [ngStyle]="getStyleSelected(option.value)"
+           (click)="chooseOption(option.value)" [ngClass]="getHidingClass()">
+
+        <div style="position:absolute;padding: 7px 0 0 8px;" [ngClass]="getHidingClass()">
+          <img *ngIf="viewIcons&&!bulkSelection" src="assets/img/vector-18@2x.svg"
+               style="position: absolute;"/>
+          <checks [ngClass]="getHidingClass()" *ngIf="bulkSelection" [theme]="selectionsTheme" [selectionType]="selectionType"
+                        (isSelected)="chooseOption(option.value)"
+                        [selectionStatus]="selectedControl(option.value)"></checks>
+        </div>
+        <div class="profile-i102223493735-6xKX0X" [ngClass]="getHidingClass()"
+             [ngStyle]="getStyleFont(option.value)">{{option.option}}</div>
+
+        <div *ngIf="selectedControl(option.value)" class="rectangle-19-74WZDk"
+             [ngStyle]="{'background-color':'var(--'+theme.rectangleColor+')'}"
+             [ngClass]="getHidingClass()"></div>
+      </div>
+
+    </div>
+  </div>
+  <div *ngIf="visibleButton()" class="frame-32-LwyPgk frame-32-LwyPgk2">
+    <button-demo [theme]="themeButton" (buttonEvent)="clickButton($event)"
+                  [buttonOptions]="buttonOptions1" [iconOptions]="iconOptions"></button-demo>
+  </div>
+</div>

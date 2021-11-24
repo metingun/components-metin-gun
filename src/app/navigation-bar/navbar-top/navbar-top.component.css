@@ -1,0 +1,55 @@
+
+.header-VMr6Om {
+  height: 56px;
+  position: relative;
+  width: 100%;
+}
+
+.header-search-Z0qGer {
+  position: relative;
+  top: 10px;
+  width: 20%;
+  float: left;
+  margin-left: 3%;
+}
+
+.frame-320-Z0qGer {
+  background-color: transparent;
+  height: 56px;
+  position: relative;
+  top: 0;
+  width: 45%;
+  float: right;
+  margin-right: 0%;
+}
+
+.frame-account{
+  top: 10px;
+  width: 45%;
+  height: 45px;
+  position: relative;
+  float: right;
+  margin-right: 3%;
+}
+
+.frame-button{
+  width: 12%;
+  height: 45px;
+  position: relative;
+  float: right;
+}
+
+.icon-company{
+  width: 8%;
+  position: relative;
+  float: left;
+  margin-left: 3.5%;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.vector-37x0xzcom{
+  width: 80%;
+  height: 100%;
+  position: relative;
+}

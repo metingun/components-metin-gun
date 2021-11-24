@@ -1,0 +1,44 @@
+<div class="custom-combo-box" [ngClass]="getHidingClass()"
+     [ngStyle]="{'background-color':' var(--'+themeInput.bgColor+')','border':'2px solid var(--'+themeInput.borderColor+')'}">
+  <div class="custom-combo-box-header" [ngClass]="getHidingClass()" >
+    <div [class.custom-combo-box-header-title-transition]="
+    bulkSelection?(focused||selectedOptionsList.length>0):(focused||selectedOption!==-1)"
+         [ngStyle]="getStyle()"
+         class="custom-combo-box-header-title licence-rdOVtA small"
+         [ngClass]="getHidingClass()">{{label}}
+    </div>
+    <div class="custom-combo-box-header-selected-item small" [ngClass]="hidingClass" >
+      <input class="body-01-regular"  [ngClass]="hidingClass" *ngIf="focused&&search" (keyup)="searchCombobox()"
+             style="border: none;outline: none;width:80%;margin-top: 7px;" type="text" [(ngModel)]="searchText"
+             stopPropagation autofocus [placeholder]="placeholder" autocomplete="'off'"/>
+
+      <div class="body-01-regular" [ngClass]="getHidingClass()" style="user-select: none;padding-top: 8px;"
+           *ngIf="bulkSelection?(search?selectedOptionsList.length>0&&!focused:selectedOptionsList.length>0):
+           (search?selectedOption!==-1&&!focused:selectedOption!==-1)">{{getSelectedOptions()}}</div>
+
+      <div class="body-01-regular" style="user-select: none;padding-top: 8px;"
+           *ngIf="bulkSelection?(focused&&selectedOptionsList.length==0&&placeholder!==''&&!search):
+           (focused&&selectedOption==-1&&placeholder!==''&&!search)">{{placeholder}}</div>
+    </div>
+    <div class="custom-combo-box-header-icons"
+         [ngClass]="getHidingClass()"  >
+      <div class="icon24-arrow-down-yiwXD5 "
+           [ngClass]="getHidingClass()"
+           [ngStyle]="{transform: focused?'rotate(180deg)':'rotate(0deg)'}">
+        <img class="vector-vOaChd "
+             [ngClass]="getHidingClass()"  src="../../../assets/img/vector-19@2x.svg"/>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="focused" class="custom-combo-box-list" [ngClass]="getHidingClass()" >
+    <options [options]="optionsView" [theme]="themeOptions" [withCombo]="true"
+                   [selectedOption]="selectedOption"
+                   (selectEvent)="selectedEvent($event)" [buttonOptions1]="buttonOptions1"
+                   (buttonClick)="buttonClick($event)"
+                   [selectionsTheme]="selectionsTheme" [selectionType]="selectionType" [bulkSelection]="bulkSelection"
+                   [selectedOptionsList]="selectedList"
+                   [iconOptions]="iconOptions" [themeButton]="themeButton" [uniqueValue]="uniqueValue"
+                   [viewIcons]="iconView" [hidingClassString]="hidingClass"></options>
+  </div>
+</div>
+

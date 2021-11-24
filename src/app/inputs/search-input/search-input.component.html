@@ -1,0 +1,8 @@
+<input class="header-search-ecfxZv body-01-bold" [placeholder]="searchPlaceholder" (keydown.enter)="search(1)"
+       [(ngModel)]="searchText" (keyup)="search(2)"
+       [ngStyle]="{'background-color':'var(--'+this.theme.searchBgColor+')',
+       'border':'2px solid var(--'+this.theme.borderColor+')',
+       'box-shadow':'0 1px 0 var(--'+this.theme.searchBgColor+')'}"/>
+<div class="icon12-search-9GV1nM" (click)="search(1)">
+  <img class="vector-37x0xz" src="../../../assets/img/vector-12@2x.png" />
+</div>

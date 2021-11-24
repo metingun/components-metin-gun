@@ -1,0 +1,36 @@
+.button-icon-text-grey-C61RwL {
+  height: 36px;
+  width: 100%;
+  position: relative;
+  border-radius: 25px;
+  text-align: center;
+  word-break: break-word;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  cursor: pointer;
+  user-select: none;
+}
+
+.icon24add-zCASbR {
+  width: 24px;
+  height: 24px;
+}
+
+.span_style{
+  width: 66%;
+  user-select: none;
+  text-align: center;
+}
+
+.icon24add-zCASbR2 {
+  position: relative;
+  left: 50%;
+  top: 22%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  word-break: break-all;
+  font-size: 100%;
+  text-align: center;
+}

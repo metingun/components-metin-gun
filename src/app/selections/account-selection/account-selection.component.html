@@ -1,0 +1,28 @@
+<div style="position: absolute; width: 100%" [ngClass]="visible?'account-hiding':''">
+
+  <div (click)="visible=!visible" [ngStyle]="{'background-color':'var(--'+theme.bgColor+')'}"
+       class="header-profile-C61RwL " [ngClass]="visible?'account-hiding':''">
+    <div class="frame-321-1Fing5 " [ngClass]="visible?'account-hiding':''">
+      <div [ngStyle]="{'background-color':'var(--'+theme.imageBgColor+')'}" class="frame-1732-yxCOwA " [ngClass]="visible?'account-hiding':''">
+        <div *ngIf="accountImage===''" [ngStyle]="{'color':'var(--'+theme.imageFontColor+')'}"
+             class="j-MYN9Xu h4">{{getLetter()}}</div>
+        <img *ngIf="accountImage!==''" src="{{accountImage}}"/>
+      </div>
+      <div class="frame-1731-yxCOwA " [ngClass]="visible?'account-hiding':''">
+        <div [ngStyle]="{'color':'var(--'+theme.accountNameBgColor+')'}"
+             class="jaylon-rhiel-madsen-g30twh body-01-bold " [ngClass]="visible?'account-hiding':''">{{accountName}}</div>
+        <div [ngStyle]="{'color':'var(--'+theme.roleFontColor+')'}" class="admin-g30twh small " [ngClass]="visible?'account-hiding':''">{{roleName}}</div>
+      </div>
+      <div *ngIf="options.length>0"  class="icon12-arrow-down-1Fing5 " [ngClass]="visible?'account-hiding':''">
+        <img class="vector-xouFvK " [ngClass]="visible?'account-hiding':''" src="../../../assets/img/vector-122@2x.png"/>
+      </div>
+    </div>
+
+  </div>
+  <div *ngIf="options.length>0" style="width: 90%;position:absolute;margin-top: 6px;margin-left: 5%">
+    <options (selectEvent)="selectEvent($event)" [bulkSelection]="bulkSelection" [options]="options"
+                   [selectedOption]="selectedOption" [theme]="optionsTheme" [uniqueValue]="false" [viewIcons]="iconView"
+                   [visible]="visible" [withCombo]="true" [hidingClassString]="'account-hiding'"></options>
+  </div>
+</div>
+

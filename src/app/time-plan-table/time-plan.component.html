@@ -1,0 +1,50 @@
+<div class="all-time-plan-div-frame-2">
+  <div class="all-time-plan-div-frame border-2px-bluegrey">
+    <div class="all-time-plan-div border-2px-bluegrey">
+      <table class="frame-1076-1JTV4m" [ngStyle]="{'background-color':'var(--'+theme.bgColor+')'}">
+        <tr class="frame-1073-uxBFD8">
+          <th class="success-rate-percent-NlypbQ valign-text-middle body-01-bold" style="width: 70px;"
+              [ngStyle]="{'border':'solid 1px var(--'+theme.borderColor+')'}">
+            <checks [activeText]="allDayText" [passiveText]="allDayText" [theme]="theme6"
+                          [selectionType]="selectionType" [selectionStatus]="isAllSelected()"
+                          (isSelected)="changeAllDaysSelected($event)"></checks>
+          </th>
+          <th *ngFor="let col of numSequence(7);let index=index" style="width: 110px;"
+              class="success-rate-percent-NlypbQ valign-text-middle body-01-bold"
+              [ngStyle]="{'border':'solid 1px var(--'+theme.borderColor+')'}">
+            <checks [activeText]="daysRowIndexes[index].day" [passiveText]="daysRowIndexes[index].day"
+                          [theme]="theme6"
+                          [selectionType]="selectionType" [selectionStatus]="allSelectedAtOneDay(index+1)"
+                          (isSelected)="changeDaySelected($event,index)"></checks>
+          </th>
+        </tr>
+        <tr class="frame-1547-uxBFD8" *ngFor="let hour of getHours();let rowIndex=index">
+          <td *ngFor="let b of numSequence(8);let colIndex=index"
+              class="dev-transfer1000-mhJM9B valign-text-middle body-01-medium"
+              [ngStyle]="{'color':'var(--'+theme.fontColor+')',
+      'border':checkIsSelected(colIndex,rowIndex)?'solid 1px var(--purple)':'solid 1px var(--'+theme.borderColor+')',
+      'background-color':checkIsSelected(colIndex,rowIndex)?'var(--purple)':'transparent','width':colIndex===0?'70px':'110px'}"
+              (mousedown)="mousedown(colIndex,rowIndex)"
+              (mouseover)="mouseover(colIndex,rowIndex)"
+              (mouseup)="mouseup(colIndex,rowIndex)" style="text-align: center">
+            <span *ngIf="colIndex===0" style="user-select: none">{{hour}}</span>
+            <span *ngIf="colIndex!==0" style="user-select: none;color: white">{{getTextHour(colIndex, rowIndex)}}</span>
+          </td>
+        </tr>
+      </table>
+
+    </div>
+  </div>
+
+  <div style="width: 100%">
+    <div class="frame-32-LwyPgk2 small">{{infoText}}</div>
+    <div class="frame-32-LwyPgk">
+      <button-demo [theme]="themeButton2" (buttonEvent)="clickButton($event,2)"
+                    [buttonOptions]="buttonOptions2" [iconOptions]="iconOptions2"></button-demo>
+    </div>
+    <div class="frame-32-LwyPgk">
+      <button-demo [theme]="themeButton" (buttonEvent)="clickButton($event,1)"
+                    [buttonOptions]="buttonOptions" [iconOptions]="iconOptions"></button-demo>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div style="position: absolute; width: 100%" [ngClass]="visible?'language-hiding':''">
+  <div (click)="visible=!visible" [ngStyle]="{'background-color':'var(--'+boxTheme.bgColor+')'}"
+       class="header-language-C61RwL" [ngClass]="visible?'language-hiding':''">
+    <div class="frame-321-celrhM" [ngClass]="visible?'language-hiding':''">
+      <div [ngStyle]="{'color':'var(--'+boxTheme.fontColor+')'}"
+           class="trke-0LZEPm body-01-bold" [ngClass]="visible?'language-hiding':''">{{getSelectedValue()}}</div>
+    </div>
+    <div class="icon12-arrow-down-celrhM" [ngClass]="visible?'language-hiding':''">
+      <img class="vector-Txxkhx" [ngClass]="visible?'language-hiding':''"
+           src="../../../assets/img/vector-45@2x.svg"/>
+    </div>
+  </div>
+  <div style="width: 90%;position:absolute;margin-top: 6px;margin-left: 5%">
+    <options (selectEvent)="selectEvent($event)" [bulkSelection]="bulkSelection" [options]="languages"
+                   [selectedOption]="selectedLanguage" [theme]="optionsTheme" [uniqueValue]="true" [visible]="visible"
+     [withCombo]="true" [hidingClassString]="'language-hiding'" >
+    </options>
+  </div>
+</div>

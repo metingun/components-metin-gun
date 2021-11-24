@@ -1,0 +1,16 @@
+<div class="all" (click)="changeSelection(1)">
+  <label [ngClass]="getClass()">
+  <input [disabled]="isDisabled" [id]="selectionType" [type]="'checkbox'" (click)="changeSelection(2)"
+         [checked]="selectionStatus" [name]="selectionType" [ngStyle]="{'background-color':'var(--'+theme.active.iconBgColor+')'}">
+  <span  *ngIf="selectionType!=='check'" class="checkmark custom-combo-box-header-item"
+        [ngStyle]="getOutWindowStyle()" ></span>
+  <label *ngIf="selectionType==='check'" [for]="selectionType"
+         [ngStyle]="getOutWindowStyle()" class="custom-combo-box-header-item" ></label>
+
+</label>
+  <div *ngIf="selectionType==='check'" class="on-gvN9xt body-01-medium"
+       [ngStyle]="getFontStyle()">{{text}}</div>
+  <div *ngIf="selectionType!=='check'" class="no-QtrhVw body-01-medium"
+       [ngStyle]="getFontStyle()">{{text}}</div>
+
+</div>

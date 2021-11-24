@@ -1,0 +1,69 @@
+<div class="left-menu-closed"  [@toggle]="menuClosed" *ngIf="menuClosed" (mouseover)="menuOpenClosedEvent?menuClosed=false:''">
+  <div class="left-menu-closed-frame-2">
+    <div class="left-menu-icon-groups">
+      <div class="cs-CtM2rz" (click)="clickTitleEvent()">
+        <span class="span0-FnZEQB">{{titleDark.substring(0, 1)}}</span>
+        <span class="span1-FnZEQB">{{titleLight.substring(0, 1)}}</span>
+      </div>
+      <div class="rectangle-394-CtM2rz"></div>
+    </div>
+  </div>
+  <div class="left-menu-icons-frame">
+    <div class="icon-frame" *ngFor="let image of getImages();let index=index">
+      <img class="left-menu-all-icons" src="{{image}}" (click)="clickOption(index,-1)"/>
+    </div>
+  </div>
+</div>
+
+<div class="frame-343 screen" [@toggle]="!menuClosed" *ngIf="!menuClosed" (mouseleave)="menuOpenClosedEvent?menuClosed=true:''">
+  <div class="group-301-YCcPNq">
+    <div class="campaign-suite-VhQiH5" (click)="clickTitleEvent()">
+      <span class="span0-8pBgX8">{{titleDark}}</span>
+      <br><span class="span2-8pBgX8">{{titleLight}}</span>
+    </div>
+    <div class="rectangle-394-VhQiH5" *ngIf="rectangleVisible"></div>
+  </div>
+  <div class="frame-311-TyQW37">
+    <div class="frame-310-1EwBXW">
+      <div class="frame-1685-ejSNoY" *ngFor="let option of menuOptions;let index=index"
+
+           [ngStyle]="getStyleForParentFrame(index,option)">
+        <div class="frame-370-lXiPOi" (click)="clickOption(index,-1)"
+             [routerLink]="option.routing!==undefined&&option.routing!==null?['/'+option.routing]:[]">
+          <div class="frame-314-4tkBkw"
+               [ngStyle]="{'background-color': selectedOption.firstNode===index?'var(--light-bluegrey)':'var(--white)'}">
+            <div class="frame-1555-VEx2xA">
+              <div class="menu-campaigns-JJABxD">
+                <div class="frame-1677-UOrSsD">
+                  <img class="icon24campain-RmVrbX" src="{{option.imagePath}}"/>
+                  <div class="campaigns-i311154701209870000-RmVrbX body-01-medium">{{option.name}}</div>
+                </div>
+                <div class="icon24-arrow-down-UOrSsD" *ngIf="option.childList.length>0"
+                     [ngStyle]="{'transform':openOptions.indexOf(index)!==-1?'rotate(0.00deg)':'rotate(-90.00deg)'}">
+                  <img class="vector-3A1PA6" src="../../../assets/img/vector@2x.svg"/></div>
+              </div>
+              <div class="frame-347-JJABxD">
+                <div class="rectangle-11-EPSx2v"
+                     [ngStyle]="{'background-color':selectedOption.firstNode===index?'var(--dark-purple)':'var(--white)'}"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame-1681-lXiPOi" *ngIf="openOptions.indexOf(index)!==-1 && option.childList.length!==0"
+             [ngStyle]="{'height':openOptions.indexOf(index)!==-1?10*option.childList.length+'%':'0px'}">
+          <div class="frame-1677-UOrSsD2" (click)="clickOption(index,index2)"
+               *ngFor="let option1 of option.childList;let index2=index"
+               [routerLink]="option1.routing!==undefined&&option1.routing!==null?['/'+option1.routing]:[]">
+
+            <img *ngIf="option1.imagePath!==''&&option1.imagePath!==undefined&&option1.imagePath!==null"
+                 class="icon24campain-RmVrbX2" src="{{option1.imagePath}}"/>
+            <div class="list-xk5GLD body-01-medium">{{option1.name}}</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

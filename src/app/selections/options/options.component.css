@@ -1,0 +1,98 @@
+.x102223493 .frame-1362-4NCj7i {
+  height: 32px;
+  left: 0;
+  opacity: 1;
+  position: relative;
+  width: 100%;
+}
+
+
+.frame-1362-4NCj7i:hover {
+  background-color: var(--light-purple-2) !important;
+  cursor: pointer;
+}
+
+.x102223493 .profile-i102223493735-6xKX0X {
+  user-select: none;
+  background-color: transparent;
+  font-family: 'Poppins', Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.x102223493 .rectangle-19-74WZDk {
+  border-radius: 1px;
+  height: 32px;
+  margin-left: 100%;
+  opacity: 1;
+  position: absolute;
+  width: 3px;
+}
+
+.frame-56-lOKy0j111::-webkit-scrollbar {
+  width: 1px;
+}
+
+.frame-56-lOKy0j111::-webkit-scrollbar-track {
+  background-color: var(--bluegrey);
+  border-radius: 100px;
+}
+
+.frame-56-lOKy0j111::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  border: 0px solid transparent;
+  background-clip: content-box;
+  background-color: var(--blue);
+}
+
+.frame-56-lOKy0j111::-webkit-scrollbar-track-piece {
+  height: 90%;
+}
+
+.x102223493 .frame-32-LwyPgk {
+  background-color: transparent;
+  height: 32px;
+  opacity: 1;
+  position: relative;
+  margin-top: 3px;
+  padding-top: 3px;
+  width: 100%;
+  cursor: pointer;
+}
+
+
+.frame-32-LwyPgk2 {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 45px;
+}
+
+
+.x102223493 {
+  border-radius: 2px;
+  box-shadow: 0 2px 10px #0000000d;
+  height: fit-content;
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+  z-index: 95;
+  min-width: 80px;
+}
+
+.frame-56-lOKy0j111 {
+  height: fit-content;
+  position: relative;
+  overflow-x: hidden;
+  max-height: 140px;
+  overflow-y: auto;
+  padding-left: 8px;
+  padding-right: 13px;
+  padding-bottom: 10px;
+}

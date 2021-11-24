@@ -1,0 +1,116 @@
+<div (click)="!isDisabled?(viewPage!==-1?viewPage=-1:viewPage=0):''" class="form-dropdown-ireEVT" [ngClass]="hidingClass">
+    <div [ngStyle]="{'background-color':'var(--'+theme.inputBgColor+')'}"
+         class="frame-274-uxwwVF border-2px-bluegrey" [ngClass]="hidingClass">
+        <div class="frame-1558-ZQP9wi" [ngClass]="hidingClass">
+            <img class="icon24calendar-Xqg3zM" [ngClass]="hidingClass"
+                 src="../../../assets/img/icon-24-calendar@2x.svg"/>
+            <input (keyup)="inputKeyUp()"
+                   [(ngModel)]="viewDate" [appMaskDate]="separateDateForMask()"
+                   [ngStyle]="{'color':'var(--'+theme.inputFontColor+')'}"
+                   [placeholder]="separateDateForMaskPlaceholder()"
+                   class="x4-may-2017-9-may-2017-Xqg3zM body-01-regular" [ngClass]="hidingClass"
+                   [readOnly]="isDisabled" [disabled]="isDisabled"/>
+        </div>
+        <div class="icon24-arrow-down-ZQP9wi" [ngClass]="hidingClass">
+            <img class="vector-llIstm" [ngClass]="hidingClass" src="../../../assets/img/vector-47@2x.png"/>
+        </div>
+    </div>
+    <div class="frame-276-uxwwVF" [ngClass]="hidingClass">
+        <div [ngStyle]="{'color':'var(--'+theme.inputLabelColor+')'}"
+             class="licence-iuKdwI body-01-medium" [ngClass]="hidingClass">{{label}}</div>
+    </div>
+</div>
+
+<div *ngIf="viewPage!==-1" class="group-311-9lf4qE" [ngClass]="hidingClass">
+    <div [ngStyle]="{'background-color':'var(--'+theme.pickerBgColor+')'}"
+         class="form-calendar-month-Felv44" [ngClass]="hidingClass">
+
+        <div *ngIf="viewPage===0" class="frame-1340-p4i8St" [ngClass]="hidingClass">
+            <div class="frame-1338-2hLfwx" [ngClass]="hidingClass">
+                <div (click)="previousMonth()" class="icon12-arrow-down-18NAFj" [ngClass]="hidingClass">
+                    <img class="vector-t84c00" [ngClass]="hidingClass" src="../../../assets/img/vector-47@2x.png"/>
+                </div>
+                <div (click)="pageClick()" [ngStyle]="{'color':'var(--'+theme.normalFontColor+')'}"
+                     class="title-datepicker b1-bold" [ngClass]="hidingClass">
+                    {{getTitleForDayPage()}}</div>
+                <div (click)="nextMonth()" class="icon12-arrow-down-TT6HtW" [ngClass]="hidingClass">
+                    <img class="vector-rY5vzO" [ngClass]="hidingClass" src="../../../assets/img/vector-47@2x.png"/>
+                </div>
+            </div>
+            <hr class="rectangle-353-2hLfwx" [ngClass]="hidingClass"/>
+            <div class="centered-view-page-date" [ngClass]="hidingClass">
+                <div class="frame-1360-eRHxiz" [ngClass]="hidingClass">
+                    <table>
+                        <tr>
+                            <th *ngFor="let day of dateInfoModel.days"
+                                [ngStyle]="{'color':'var(--'+theme.shortDayFontColor+')'}"
+                                class="short-name-day body-02-medium" [ngClass]="hidingClass">{{day.shortName}}</th>
+                        </tr>
+                        <tr *ngFor="let num2 of numSequence(6);let index=index"
+                            [ngStyle]="{'top':16*index+8+'%','color':'var(--'+theme.normalFontColor+')'}"
+                            class="day-number-rows body-02-medium">
+                            <td (click)="styleChange(num,timeValue,false)"
+                                *ngFor="let num of separateDaysArray(7*index,7+7*index)"
+                                [ngClass]="getClass(num)" [ngStyle]="getClassStyle(num)" class="yU6tNu22">{{num}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="viewPage===1" class="frame-1340-p4i8St" [ngClass]="hidingClass">
+            <div class="frame-1338-2hLfwx" [ngClass]="hidingClass">
+                <div (click)="viewYear>0?viewYear=viewYear-1:''" class="icon12-arrow-down-18NAFj"
+                     [ngClass]="hidingClass">
+                    <img class="vector-t84c00" [ngClass]="hidingClass"
+                         src="../../../assets/img/vector-47@2x.png"/></div>
+                <div (click)="viewPage=2" [ngStyle]="{'color':'var(--'+theme.normalFontColor+')'}"
+                     class="title-datepicker b1-bold" [ngClass]="hidingClass">{{viewYear}}</div>
+                <div (click)="viewYear=viewYear+1" class="icon12-arrow-down-TT6HtW" [ngClass]="hidingClass">
+                    <img class="vector-rY5vzO" [ngClass]="hidingClass"
+                         src="../../../assets/img/vector-47@2x.png"/></div>
+            </div>
+            <img class="rectangle-353-2hLfwx" [ngClass]="hidingClass" src="../../../assets/img/rectangle-353@2x.png"/>
+            <div class="frame-1360-eRHxiz" [ngClass]="hidingClass">
+                <table style="border-collapse: separate;border-spacing: 10px;width: 100%;">
+                    <tr *ngFor="let month of numSequence(4);let index=index">
+                        <td (click)="styleChangeMonths(index2+3*index)"
+                            *ngFor="let month2 of numSequence(3);let index2=index"
+                            [ngClass]="getClassMonths(index2+3*index)"
+                            [ngStyle]="getClassStyleMonths(index2+3*index)"
+                            class="border-2px-purple body-01-medium">
+                            {{dateInfoModel.months[index2 + 3 * index].fullName}}</td>
+                </table>
+            </div>
+        </div>
+        <div *ngIf="viewPage===2" class="frame-1340-p4i8St" [ngClass]="hidingClass">
+            <div class="frame-1338-2hLfwx" [ngClass]="hidingClass">
+                <div (click)="previousYear()" class="icon12-arrow-down-18NAFj" [ngClass]="hidingClass">
+                    <img class="vector-t84c00" [ngClass]="hidingClass"
+                         src="../../../assets/img/vector-47@2x.png"/></div>
+                <div [ngStyle]="{'color':'var(--'+theme.normalFontColor+')'}"
+                     class="title-datepicker b1-bold" [ngClass]="hidingClass">{{viewYear}}</div>
+                <div (click)="nextYear()" class="icon12-arrow-down-TT6HtW" [ngClass]="hidingClass">
+                    <img class="vector-rY5vzO" [ngClass]="hidingClass"
+                         src="../../../assets/img/vector-47@2x.png"/></div>
+            </div>
+            <img class="rectangle-353-2hLfwx" [ngClass]="hidingClass" src="../../../assets/img/rectangle-353@2x.png"/>
+            <div class="frame-1360-eRHxiz" [ngClass]="hidingClass">
+                <table style="border-collapse: separate;border-spacing: 10px;width: 100%;">
+                    <tr *ngFor="let year of numSequence(4);let index=index">
+                        <td (click)="styleChangeYears(viewFirstYear+index2+3*index)"
+                            *ngFor="let year2 of numSequence(3);let index2=index"
+                            [ngClass]="getClassYears(viewFirstYear+index2+3*index)"
+                            [ngStyle]="getClassStyleYears(viewFirstYear+index2+3*index)"
+                            class="border-2px-purple body-01-medium">{{viewFirstYear + index2 + 3 * index}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <timepicker (getTime)="getTime($event)" *ngIf="withTimePicker && viewPage!==-1"
+                      [clickOutCloseBox]="false"
+                      [currentTime]="currentTime" [hour24]="hour24"
+                      [theme]="themeTimepicker" [timeFormat]="dateFormat" [timeWithDatepicker]="withTimePicker"
+                      [timeWithInput]="timeWithInput" [hidingClassString]="hidingClass"></timepicker>
+</div>
+

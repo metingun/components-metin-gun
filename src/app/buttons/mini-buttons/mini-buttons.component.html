@@ -1,0 +1,15 @@
+<div class="button-icon-text-grey-C61RwL valign-text-middle b2" (click)="buttonClick()" [ngStyle]="getButtonStyle()"
+     [ngClass]="getHidingClassVisible()">
+  <div class="icon24add-zCASbR1" [ngStyle]="getImageDivStyle(1)" *ngIf="buttonOptions.iconFirst!==''"
+       [ngClass]="getHidingClassVisible()">
+    <img class="icon24add-zCASbR" [ngStyle]="getImgStyle()" src="{{buttonOptions.iconFirst}}"
+         [ngClass]="getHidingClassVisible()"/></div>
+
+  <span [ngStyle]="getTextStyle()" class="span_style"
+        [ngClass]="getHidingClassVisible()">{{buttonOptions.buttonText}}</span>
+
+  <div [ngStyle]="getImageDivStyle(2)" class="icon24add-zCASbR3" *ngIf="buttonOptions.iconSecond!==''"
+       [ngClass]="getHidingClassVisible()">
+    <img class="icon24add-zCASbR" [ngStyle]="getImgStyle()" src="{{buttonOptions.iconSecond}}"
+         [ngClass]="getHidingClassVisible()"/></div>
+</div>

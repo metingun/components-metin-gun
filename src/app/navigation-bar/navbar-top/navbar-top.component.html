@@ -1,0 +1,31 @@
+<div class="header-VMr6Om" [ngStyle]="{'background-color':'var(--'+theme.bgColor+')'}">
+  <div class="frame-320-Z0qGer">
+    <div class="frame-button">
+      <button-demo [theme]="themeButton" (buttonEvent)="buttonEvent()"
+                    [buttonOptions]="buttonOptions1" [iconOptions]="iconOptions"></button-demo>
+    </div>
+    <div *ngIf="visibility.language" class="frame-account" style="width: 25%">
+      <language-selection [optionsTheme]="optionsTheme2" [languages]="languages"
+                                (selectedEvent)="selectedEventLang($event)"
+                                [boxTheme]="boxTheme2" [selectedLanguage]="selectedLanguage" ></language-selection>
+    </div>
+    <div *ngIf="visibility.account" class="frame-account">
+      <account-selection [theme]="themeAccount" [selectedOption]="selectedOptionAccount"
+                             (selectOptionEvent)="selectOptionEvent($event)"
+                             [accountImage]="accountImage" [accountName]="accountName"
+                             [boxTheme]="boxTheme" [options]="options"
+                             [optionsTheme]="optionsTheme" [roleName]="roleName" ></account-selection>
+    </div>
+
+
+  </div>
+
+  <div (click)="iconClick()" *ngIf="visibility.logo" class="icon-company">
+    <img class="vector-37x0xzcom" src="{{logoPath}}" />
+  </div>
+
+  <div *ngIf="visibility.search" class="header-search-Z0qGer">
+    <search-input [theme]="themeSearch" (searchEvent)="searchTextEvent($event)"
+                      [privateSearchMethod]="privateSearchMethod" [searchPlaceholder]="searchPlaceholder" ></search-input>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="cards-team-duble-VMr6Om border-1px-bluegrey"
+[ngStyle]="{'background-color':'var(--'+theme.bgColor+')'}">
+  <div class="frame-50-zNwxjo">
+    <div class="mszt-80ZmyV body-01-medium"
+         [ngStyle]="{'color':'var(--'+theme.fontColor+')'}">{{content.text}}</div>
+    <div style="width: 34px;float: right;margin-right: 10px">
+    <mini-buttons [buttonOptions]="buttonOptions" (buttonEvent)="buttonClick($event)"></mini-buttons></div>
+  </div>
+</div>

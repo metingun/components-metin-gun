@@ -1,0 +1,5 @@
+<div class="fixed-button-frame" [ngStyle]="{'background':'var(--'+theme.bgColor+')'}"
+     (mouseenter)="openStatus=true" (mouseleave)="openStatus=false">
+  <img class="button-star-icon" src="{{buttonOptions.iconPath}}">
+  <span *ngIf="openStatus" class="b1"  [ngStyle]="{'color':'var(--'+theme.fontColor+')'}">{{buttonOptions.text}}</span>
+</div>

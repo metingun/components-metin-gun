@@ -1,0 +1,41 @@
+<div class="frame-97-C61RwL">
+  <div class="frame-96-cwDEzw">
+    <div class="frame-94-edUzoX">
+      <div class="frame-93-lOKy0j">
+        <div class="teams-8r2WmO body-01-bold">{{titleTeamList}}</div>
+        <div class="frame-304-8r2WmO">
+          <div *ngIf="firstIconName!==''" class="button-icon-grey-JCoFHU" (click)="clickFirstIconEvent()">
+            <div class="icon24-filter-sEzJ4s">
+              <icons [iconName]="firstIconName"></icons>
+            </div>
+          </div>
+          <div *ngIf="secondIconName!==''" class="button-icon-sort-by-JCoFHU" (click)="clickSecondIconEvent()">
+            <div class="icon24-sort-276XeA">
+              <icons [iconName]="secondIconName"></icons>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: 45px;padding-bottom: 20px">
+        <button-medium [buttonText]="'ADD NEW ANNOUNCEMENT'"
+                             (clickEvent)="clickAddButton()"></button-medium>
+      </div>
+      <div *ngIf="listVisible" style="width: 100%;height: fit-content;position:relative;padding-bottom: 40px">
+        <div class="header-search-Z0qGer">
+          <search-input [theme]="themeSearch" (searchEvent)="searchTextEvent($event)"
+                              [privateSearchMethod]="privateSearchMethod"
+                              [searchPlaceholder]="searchPlaceholder"></search-input>
+        </div>
+        <div class="frame-56-lOKy0j" cdkDropList (cdkDropListDropped)="drop($event)"
+             [cdkDropListData]="listData" [ngStyle]="{'max-height':theme.height}">
+          <div *ngIf="listData.length===0" class="empty-list-div body-01-bold"
+          [ngStyle]="{'background':'var(--'+theme.boxColor+')','color':'var(--'+theme.fontColor+')'}">{{noteForEmptyList}}</div>
+          <announce-list-content cdkDrag *ngFor="let data of listData"
+                                       [theme]="data.theme" [content]="getContent(data)"
+                                       [buttonOptions]="data.buttonOptions"
+                                       (buttonEvent)="buttonClick9(data.id)"></announce-list-content>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

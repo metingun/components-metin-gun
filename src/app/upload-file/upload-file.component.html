@@ -1,0 +1,21 @@
+<div class="cards-drag-drop-9lf4qE file-upload "  [ngStyle]="{'background-color':'var(--'+theme.bgColor+')','border':dragOver?'1px dashed':'none'}"
+     [appDragDrop]="dragDropEnabled" (dropped)="handleFileDrop($event)" (dragover)="dragOver=true"
+     (dragleave)="dragOver=false" >
+  <div class="frame-1201-RfxLLO">
+    <div class="frame-116-fxhkU6">
+      <div class="icons40-upload-V9xOE7">
+        <img class="icon-feather-upload-cloud-oIPAqk" src="{{image}}"/>
+      </div>
+      <div class="drag-drop-a-fil-295653227240253-V9xOE7 b2"
+           [ngStyle]="{'color':'var(--'+theme.fontColor+')'}">{{boldText}}</div>
+    </div>
+    <div class="x512x512-maks-51-295653227722266-fxhkU6 small"
+         [ngStyle]="{'color':'var(--'+theme.fontColor+')'}">{{text}}</div>
+  </div>
+  <div class="button-file-upload">
+    <button-demo (filesChanged)="addFiles($event)" [fileTypes]="fileTypes"
+                  [multiple]="multiple" #button [buttonOptions]="buttonOptions"
+                  [theme]="themeButton" [iconOptions]="iconOptions"></button-demo>
+  </div>
+</div>
+

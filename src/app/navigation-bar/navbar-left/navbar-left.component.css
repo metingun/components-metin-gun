@@ -1,0 +1,373 @@
+.frame-343 {
+  background-color: white;
+  overflow-x: hidden;
+  position: fixed;
+  width: 200px;
+  box-shadow: 5px 0 8px #0000000d;
+  height: 97vh;
+  max-height: 97vh;
+  padding-bottom: 12px;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+.frame-343::-webkit-scrollbar {
+  width: 2px;
+}
+
+.frame-343::-webkit-scrollbar-track {
+  background-color: var(--bluegrey);
+  border-radius: 100px;
+}
+
+.frame-343::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  border: 0px solid transparent;
+  background-clip: content-box;
+  background-color: var(--blue);
+}
+
+.frame-343::-webkit-scrollbar-track-piece {
+  height: 90%;
+}
+
+.frame-343 .group-301-YCcPNq {
+  background-color: transparent;
+  height: 32px;
+  left: 16px;
+  position: relative;
+  top: 20px;
+  width: 91px;
+  cursor: pointer;
+}
+
+.frame-343 .campaign-suite-VhQiH5 {
+  background-color: transparent;
+  color: transparent;
+  font-family: var(--font-family-fredoka_one);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  line-height: 16px;
+  position: relative;
+  text-align: left;
+  width: 91px;
+  user-select: none;
+}
+
+.frame-343 .span0-8pBgX8 {
+  color: var(--dark-purple);
+  font-style: normal;
+}
+
+.frame-343 .span2-8pBgX8 {
+  color: var(--purple);
+  font-style: normal;
+  position: absolute;
+  top: 21px;
+}
+
+.frame-343 .rectangle-394-VhQiH5 {
+  background-color: var(--dark-purple);
+  border-radius: 21px;
+  height: 3px;
+  left: 57px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 35px;
+  width: 14px;
+}
+
+.frame-343 .frame-311-TyQW37 {
+  background-color: transparent;
+  height: 640px;
+  position: absolute;
+  top: 8%;
+  width: 15%;
+}
+
+.frame-343 .frame-310-1EwBXW {
+  background-color: transparent;
+  height: 528px;
+  position: relative;
+  top: 50px;
+  width: 184px;
+}
+
+.frame-343 .frame-1685-ejSNoY {
+  margin-top: 25%;
+  cursor: pointer;
+  background-color: transparent;
+  position: relative;
+  width: 183px;
+}
+
+.frame-343 .frame-370-lXiPOi {
+  background-color: transparent;
+  height: 40px;
+  position: relative;
+  width: 183px;
+  user-select: none;
+}
+
+.frame-343 .frame-314-4tkBkw {
+  height: 40px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: relative;
+  top: 0px;
+  width: 184px;
+}
+
+.frame-343 .frame-1555-VEx2xA {
+  background-color: transparent;
+  height: 40px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 136px;
+}
+
+.frame-343 .menu-campaigns-JJABxD {
+  background-color: transparent;
+  height: 40px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 182px;
+}
+
+.frame-343 .frame-1677-UOrSsD {
+  background-color: transparent;
+  height: 23px;
+  left: 16px;
+  position: absolute;
+  top: 8px;
+  width: 121px;
+}
+
+.frame-343 .frame-1677-UOrSsD2 {
+  background-color: transparent;
+  height: 24px;
+  left: 32px;
+  position: relative;
+  user-select: none;
+}
+
+.frame-343 .icon24campain-RmVrbX {
+  background-color: transparent;
+  height: 24px;
+  mix-blend-mode: normal;
+  position: absolute;
+  width: 24px;
+}
+
+
+.frame-343 .icon24campain-RmVrbX2 {
+  background-color: transparent;
+  height: 18px;
+  position: absolute;
+  width: 18px;
+}
+
+.frame-343 .campaigns-i311154701209870000-RmVrbX {
+  background-color: transparent;
+  color: var(--dark-purple);
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 32px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 3px;
+  width: 91px;
+}
+
+.frame-343 .icon24-arrow-down-UOrSsD {
+  background-color: transparent;
+  height: 24px;
+  left: 142px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 8px;
+  width: 24px;
+}
+
+.frame-343 .vector-3A1PA6 {
+  background-color: transparent;
+  height: 14px;
+  left: 8px;
+  position: absolute;
+  top: 5px;
+  transform: rotate(90.00deg);
+  width: 8px;
+}
+
+.frame-343 .frame-347-JJABxD {
+  background-color: transparent;
+  height: 40px;
+  left: 182px;
+  position: absolute;
+  top: 0px;
+  width: 2px;
+}
+
+.frame-343 .rectangle-11-EPSx2v {
+  border-radius: 1px;
+  height: 40px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: relative;
+  top: 0px;
+  width: 2px;
+}
+
+.frame-343 .frame-1681-lXiPOi {
+  background-color: transparent;
+  left: 0px;
+  position: absolute;
+  width: 149px;
+}
+
+.frame-343 .list-xk5GLD {
+  background-color: transparent;
+  color: var(--purple);
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 32px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: relative;
+  text-align: left;
+  margin-top: 20px;
+  width: auto;
+}
+
+
+/* CLOSED MENU */
+
+.left-menu-closed {
+  background-color: var(--white);
+  box-shadow: 5px 0 8px #0000000d;
+  box-sizing: border-box;
+  height: 97vh;
+  position: fixed;
+  width: 67px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+
+.left-menu-closed-frame-2 {
+  align-items: flex-end;
+  background-color: white;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 68px;
+  justify-content: flex-end;
+  min-width: 67px;
+  padding: 9px 7px;
+  position: relative;
+  width: auto;
+}
+
+.left-menu-icon-groups {
+  align-items: flex-end;
+  background-color: white;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  height: auto;
+  justify-content: flex-start;
+  min-height: 39px;
+  position: relative;
+  width: 51px;
+}
+
+.cs-CtM2rz {
+  user-select: none;
+  background-color: transparent;
+  color: transparent;
+  font-family: var(--font-family-fredoka_one);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  letter-spacing: 0.00px;
+  line-height: 16px;
+  position: absolute;
+  text-align: left;
+  width: 51px;
+}
+
+.span0-FnZEQB {
+  color: var(--dark-purple);
+  font-style: normal;
+}
+
+.span1-FnZEQB {
+  color: var(--purple);
+  font-style: normal;
+}
+
+.rectangle-394-CtM2rz {
+  background-color: var(--dark-purple);
+  border-radius: 21px;
+  height: 9px;
+  left: 19px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 30px;
+  width: 28px;
+}
+
+.left-menu-icons-frame {
+  align-items: flex-start;
+  background-color: white;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  height: 100%;
+  justify-content: flex-start;
+  margin-top: 65%;
+  position: relative;
+  width: 40px;
+}
+
+.left-menu-all-icons {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 24px;
+  margin-left: 0px;
+  mix-blend-mode: normal;
+  position: relative;
+  width: 24px;
+  cursor: pointer;
+}
+
+.icon-frame {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 39px;
+  justify-content: flex-start;
+  margin-top: 40px;
+  min-width: 40px;
+  padding: 0 8px;
+  position: relative;
+  width: auto;
+}
+
